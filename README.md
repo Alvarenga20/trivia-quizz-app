@@ -33,3 +33,4 @@ The app is built using the following modern web technologies:
 - **Prettier**
 - **PostCSS**
 
+#### It's deployed in Netlify: https://alvarenga-quizz.netlify.app/
