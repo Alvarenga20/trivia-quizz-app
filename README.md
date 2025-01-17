@@ -1,50 +1,35 @@
-# React + TypeScript + Vite
+# Trivia Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the **Trivia Quiz App**! This web application allows users to test their knowledge by taking fun and engaging trivia quizzes. Users can select their preferred category, difficulty level, and the number of questions, making the experience customizable and enjoyable. I stop working on it but any moment if you want to I could add some more features to it as multiplayer mode, user athentication or more!
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Dynamic quiz generation based on user-selected criteria.
+- Questions fetched from an external API for a wide variety of trivia topics.
+- Real-time score tracking and answer validation.
+- Review of quiz results, including correct and incorrect answers.
+- Responsive design with a visually appealing gradient background.
+- Persistent history of previous quiz results stored in local storage.
+- Interactive and animated UI elements for an engaging user experience.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The app is built using the following modern web technologies:
 
-- Configure the top-level `parserOptions` property like this:
+### Frameworks and Libraries
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React**
+- **React Router**
+- **TypeScript**
+- **Tailwind CSS**
+- **Vite**
+- **he**
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Additional Tools
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- **Local Storage**
+- **API Management**
+- **ESLint**
+- **Prettier**
+- **PostCSS**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
